@@ -6,7 +6,11 @@
 		<meta name="description" content="Projeto Portfólio">
 		<meta name="author" content="Generation Brasil">
 		<meta name="keywords" content="HTML, CSS, JavaScript">
-		<title>Meu Perfil</title>
+        <link rel="icon" type="image/svg" href="./assets/img/favicon.svg" />
+        <!--Link para o css-->
+        <link rel="stylesheet" href="./assets/css/style.css">
+		
+        <title>Meu Perfil</title>
 	</head>
 
     <body>
@@ -14,7 +18,7 @@
     <header>
 
         <!-- Div conteúdo do Cabeçalho-->
-         <div id="header_contente">
+         <div id="header_content" class="flex">
 
             <!--Título do Cabeçalho-->
             <div id="titulo">
@@ -52,55 +56,53 @@
     <!--Seção principal da Página (main)-->
     <main>
 
-        <!--Seção sobre mim-->
-        <section id="about">
+    <!-- Seção Sobre Mim -->
+    <section id="about">
+        <!-- Foto fixa -->
+        <img 
+            src="./assets/img/foto.png"
+            alt="Foto do criador desse conteúdo"
+            class="foto"
+        />
 
-            <!--Título da seção-->
-            <h2>Sobre mim</h2>
-
-            <!--Conteúdo da seção-->
-            <div id="conteudo">
-                <!--Imagem de perfil-->
-                <img 
-                    src="./assets/img/foto.png"
-                    alt="Foto do criador desse conteudo"
-                />
-
-              <!--Texto sobre mim -->
-              <article id="sobre_texto"></article>  
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing
-                elit. Voluptatem odio possimus, dolorem earum atque
-                itaque quas soluta placeat iure omnis porro cum
-                debitis sequi libero! Deleniti vitae quis hic
-                cumque. Lorem ipsum, dolor sit amet consectetur
-                adipisicing elit. Eius inventore ullam, quia
-                deserunt enim cumque hic officia repudiandae ad ab
-                et sapiente qui vitae accusamus adipisci provident
-                sit assumenda laboriosam!
+        <!-- Texto sobre mim -->
+        <article id="conteudo">
+            <p>
+                Olá! Meu nome é Eduarda, mas pode me chamar de Duda. 
+                Sou estudante de Ciência da Computação e Engenharia de 
+                Software, além de estar me especializando em desenvolvimento 
+                fullstack Java por meio de um bootcamp da Generation Brasil. 
+                Vivo no Rio de Janeiro, sou torcedora apaixonada pelo 
+                Fluminense e fã da Taylor Swift, do universo incrível dos 
+                livros do Stephen King, e claro, de animais!
+                Minha paixão por tecnologia começou na infância, quando 
+                passava horas me divertindo no Club Penguin. Na adolescência, 
+                essa curiosidade só cresceu, e foi quando criei meus primeiros 
+                blogs no Tumblr. Foi ali que descobri o quanto amava explorar 
+                códigos, mesmo sem perceber.
             </p>
-               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing
-                elit. Voluptatem odio possimus, dolorem earum atque
-                itaque quas soluta placeat iure omnis porro cum
-                debitis sequi libero! Deleniti vitae quis hic
-                cumque. Lorem ipsum, dolor sit amet consectetur
-                adipisicing elit. Eius inventore ullam, quia
-                deserunt enim cumque hic officia repudiandae ad ab
-                et sapiente qui vitae accusamus adipisci provident
-                sit assumenda laboriosam!
+            <p>
+                Inicialmente, segui outro caminho acadêmico e passei três anos 
+                estudando Ciências Atuariais e Estatística na UFRJ. Apesar de 
+                aprender muito, percebi que minha verdadeira paixão sempre foi a 
+                tecnologia. Então, com coragem e determinação, mudei de área 
+                para seguir o que realmente amo.
             </p>
-            </div>
-
-        </section>
+            <p>
+                Hoje, me dedico ao universo da programação e desenvolvimento, 
+                buscando sempre aprender, crescer e criar soluções inovadoras. 🚀
+            </p>
+        </article>
+    </section>
+        
 
         <!--Seção contendo um vídeo de sua preferência-->
-        <section id="video">
+        <section id="video" class="flex_start">
             <!--Título da seção-->
-            <h2>Um vídeo inspiração: </h2>
+            <h2>💻 Um vídeo inspiração 💻</h2>
 
             <!--Vídeo da seção-->
-            <div id="youtube">
+            <div id="youtube" class="flex">
                 <iframe 
                     width="560" 
                     height="315" 
@@ -115,7 +117,7 @@
     </main>
 
     <!--Rodapé da Página (footer)-->
-    <footer>
+    <footer class="flex">
         <!--Seção de Contato - Redes Sociais-->
         <section id="redes_sociais">
             <a href="">

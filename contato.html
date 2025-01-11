@@ -7,23 +7,33 @@
     <meta name="author" content="Eduarda Valmor">
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <link rel="icon" type="image/svg" href="./assets/img/favicon.svg" />
+    <!--Link para o css-->
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Contato</title>
 </head>
 
 <body>
     <!-- Cabeçalho da Página (header)-->
     <header>
-        <!--Div Conteúdo do Cabeçalho -->
-        <div id="header_contente">
-            <!--Título-->
+
+        <!-- Div conteúdo do Cabeçalho-->
+         <div id="header_content" class="flex">
+
+            <!--Título do Cabeçalho-->
             <div id="titulo">
+
+                <!--Meu nome-->
                 <h1>Eduarda Valmor</h1>
+
             </div>
 
-            <!--Conteúdo do menu (header)-->
+            <!-- Conteudo do Menu da página (header)-->
             <div id="menu">
+                
                 <!--Menu da página-->
                 <nav>
+                    
+                    <!--Marcadores não ordenados + links -->
                     <ul id="menu">
                         <li>
                             <a href="index.html"> Home </a>
@@ -31,16 +41,21 @@
                         <li>
                             <a href="contato.html"> Contato </a>
                         </li>
+
                     </ul>
+
                 </nav>
+
             </div>
-        </div>
+
+         </div>
+
     </header>
 
     <!--Seção Principal da Página (main)-->
     <main>
         <!--Seção do formulário de contato e redes sociais-->
-        <section id="contact">
+        <section id="contact" class="flex">
 
             <!-- Seção do formulário-->
              <form action="#" method="sumit" id="formulario">
@@ -64,14 +79,12 @@
              </form>
             
             <!--Seção google maps-->
-            <article id="mapa">
+            <article id="mapa" class="flex_start">
 
-                <p>Rio de janeiro</p>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29437.894696697473!2d-43.251995781317454!3d-22.932031249248354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997e1b4bfbdacd%3A0x4a4d38d7dbf91618!2sTijuca%2C%20Rio%20de%20Janeiro%20-%20RJ!5e1!3m2!1spt-BR!2sbr!4v1736476588105!5m2!1spt-BR!2sbr" 
-                width="400" 
+                width="480" 
                 height="300" 
-                style="border:0;" 
-                allowfullscreen="" 
+                allowfullscreen
                 loading="lazy" 
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
 
@@ -80,10 +93,9 @@
     </main>
 
     <!--Rodapé da Página (footer)-->
-    <footer>
-        <!-- Seção de Contato - Redes Sociais -->
+    <footer class="flex">
+        <!--Seção de Contato - Redes Sociais-->
         <section id="redes_sociais">
-
             <a href="">
                 <img src="assets/img/linkedin.svg" alt="LinkedIn" />
             </a>
@@ -93,11 +105,8 @@
             <a href="">
                 <img src="assets/img/instagram.svg" alt="Instagram" />
             </a>
+        </section>
 
-    </section>
-
-    <h3>Feito com 💗 Eduarda Valmor</h3>
-
+            <h3>Feito com 💗 por Eduarda Valmor</h3>
     </footer>
-</body>
 </html>
