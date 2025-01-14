@@ -1,83 +1,91 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width", initial-scale="1.0">
-    <meta name="description" content="Projeto Portfólio">
-    <meta name="author" content="Eduarda Valmor">
-    <meta name="keywords" content="HTML, CSS, JavaScript">
-    <link rel="icon" type="image/svg" href="./assets/img/favicon.svg" />
-    <!--Link para o css-->
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Contato</title>
-</head>
+	<head>
+		<meta charset="UTF-8">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Projeto Portfólio">
+		<meta name="author" content="Generation Brasil">
+		<meta name="keywords" content="HTML, CSS, JavaScript">
+		
+		<link rel="icon" type="image/svg" href="./assets/img/favicon.svg" />
 
-<body>
-    <!-- Cabeçalho da Página (header)-->
-    <header>
+		<!-- Link para a Folha de Estilo da Página - CSS -->
+		<link rel="stylesheet" href="./assets/css/style.css" />
 
-        <!-- Div conteúdo do Cabeçalho-->
-         <div id="header_content" class="flex">
+		<title>Meu Perfil</title>
+	</head>
+	<body>
+		<!-- Cabeçalho da Página (header) -->
+		<header>
+			<!-- Div Conteudo do Cabeçalho -->
+			<div id="header_content" class="flex">
+				<!-- Titulo do Cabeçalho -->
+				<div id="titulo">
+					<!-- Seu nome -->
+					<h1>Generation Brasil</h1>
+				</div>
 
-            <!--Título do Cabeçalho-->
-            <div id="titulo">
+				<!-- Conteudo do Menu da Página (header) -->
+				<div id="menu">
+					<!-- Menu da Página -->
+					<nav>
+						<!-- Marcadores não ordenados + links -->
+						<ul id="menu">
+							<li>
+								<a href="index.html">Home</a>
+							</li>
+							<li>
+								<a href="contato.html">Contato</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
 
-                <!--Meu nome-->
-                <h1>Eduarda Valmor</h1>
+		<!-- Seção Principal da Página (main) -->
+		<main>
+			<div id="contact" class="flex">
+				<!-- Seção Formulário de Contato-->
+				<form action="#" method="submit" id="formulario">
+					<label for="name">Nome: </label>
+					<input
+						id="name"
+						type="text"
+						name="name"
+						placeholder="Digite seu nome"
+					/>
+					<span id="txtNome"></span>
 
-            </div>
+					<label for="email">Email: </label>
+					<input
+						id="email"
+						type="text"
+						name="email"
+						placeholder="Digite seu email"
+					/>
+					<span id="txtEmail"></span>
 
-            <!-- Conteudo do Menu da página (header)-->
-            <div id="menu">
-                
-                <!--Menu da página-->
-                <nav>
-                    
-                    <!--Marcadores não ordenados + links -->
-                    <ul id="menu">
-                        <li>
-                            <a href="index.html"> Home </a>
-                        </li>
-                        <li>
-                            <a href="contato.html"> Contato </a>
-                        </li>
+					<label for="subject">Assunto: </label>
+					<input
+						id="subject"
+						type="text"
+						name="subject"
+						placeholder="Digite o título da mensagem"
+					/>
+					<span id="txtSubject"></span>
 
-                    </ul>
+					<label for="message">Mensagem: </label>
+					<textarea
+						id="message"
+						name="message"
+						placeholder="Digite sua mensagem"
+					></textarea>
 
-                </nav>
+					<button type="submit">Enviar</button>
+				</form>
 
-            </div>
-
-         </div>
-
-    </header>
-
-    <!--Seção Principal da Página (main)-->
-    <main>
-        <!--Seção do formulário de contato e redes sociais-->
-        <section id="contact" class="flex">
-
-            <!-- Seção do formulário-->
-             <form action="#" method="sumit" id="formulario">
-                <label for="name">Nome: </label>
-                <input id="name" type="text" name="name" placeholder="Digite o seu nome">
-                <span id="txtNome"></span>
-
-                <label for="email">E-mail: </label>
-                <input id="email" type="text" name="email" placeholder="Digite o seu e-mail">
-                <span id="txtEmail"></span>
-
-                <label for="subject">Assunto: </label>
-                <input id="subject" type="text" name="subject" placeholder="Digite o título da mensagem">
-                <span id="txtSubject"></span>
-
-                <label for="message">Mensagem: </label>
-                <textarea id="message" name="message" placeholder="Digite a sua mensagem"></textarea>
-
-                <button type="submit">Enviar</button>
-
-             </form>
-            
             <!--Seção google maps-->
             <article id="mapa" class="flex_start">
 
@@ -92,21 +100,27 @@
         </section>
     </main>
 
-    <!--Rodapé da Página (footer)-->
-    <footer class="flex">
-        <!--Seção de Contato - Redes Sociais-->
-        <section id="redes_sociais">
-            <a href="">
-                <img src="assets/img/linkedin.svg" alt="LinkedIn" />
-            </a>
-            <a href="">
-                <img src="assets/img/github.svg" alt="Github" />
-            </a>
-            <a href="">
-                <img src="assets/img/instagram.svg" alt="Instagram" />
-            </a>
-        </section>
+		<!-- Rodapé da Página (footer) -->
+		<footer class="flex">
+			<!-- Seção de Contato - Redes Sociais-->
+			<section id="redes_sociais">
+				<a href="">
+					<img src="assets/img/linkedin.svg" alt="LinkedIn" class="social_icon"/>
+				</a>
+				<a href="">
+					<img src="assets/img/github.svg" alt="Github" class="social_icon"/>
+				</a>
+				<a href="">
+					<img src="assets/img/instagram.svg" alt="Instagram" class="social_icon"/>
+				</a>
+			</section>
 
-            <h3>Feito com 💗 por Eduarda Valmor</h3>
-    </footer>
+			<h3>Feito com 🧡 por Generation Brasil - 2024</h3>
+			
+		</footer>
+
+		<!-- Script JavaScript-->
+		<script src="./assets/js/script.js"></script>
+
+	</body>
 </html>
